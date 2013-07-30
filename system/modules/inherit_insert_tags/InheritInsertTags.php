@@ -50,8 +50,15 @@ class InheritInsertTags extends Controller
 			global $objPage;
 
 			$arrInsertTags = array();
+			$arrGlobalInserTags = (array) deserialize($GLOBALS['TL_CONFIG']['inherit_insert_tags']);
 			$arrRootInsertTags = $this->getRootInsertTags();
 			$arrSiteInsertTags = (array) deserialize($objPage->inherit_insert_tags);
+
+			// merge all global insert tags
+			foreach ($arrGlobalInserTags as $v)
+			{
+				$arrInsertTags[$v['iit_name']] = $v['iit_value'];
+			}
 
 			// merge all insert tags from the root page
 			foreach ($arrRootInsertTags as $v)
