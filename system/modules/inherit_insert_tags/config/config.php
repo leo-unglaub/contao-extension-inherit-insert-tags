@@ -13,4 +13,7 @@
 /**
  * Hooks
  */
-$GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('InheritInsertTags', 'doReplaceInsertTags');
+$GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array
+(
+	'InheritInsertTags', 'doReplaceInsertTags'
+);
