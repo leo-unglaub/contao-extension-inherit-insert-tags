@@ -73,5 +73,3 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['inherit_insert_tags'] = array
 		'tl_class'=>'clr'
 	)
 );
-
-?>

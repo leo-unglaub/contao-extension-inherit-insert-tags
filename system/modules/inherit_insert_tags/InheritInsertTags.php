@@ -111,6 +111,3 @@ class InheritInsertTags extends Controller
 		return $arrReturn;
 	}
 }
-
-
-?>
