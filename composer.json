@@ -1,0 +1,38 @@
+{
+	"name":"leo-unglaub/contao-inherit-insert-tags",
+	"description":"Allows the user to define custom intert tags that inherit over the page tree.",
+	"keywords":["contao", "insert", "tags", "inherit"],
+	"type":"contao-module",
+	"license":"LGPL-3.0+",
+	"authors":[
+		{
+			"name":"Leo Unglaub",
+			"email":"leo@leo-unglaub.net",
+			"homepage":"https://www.leo-unglaub.net",
+			"role":"Developer"
+		}
+	],
+	"support": {
+		"email": "leo@leo-unglaub.net",
+		"issues": "https://bitbucket.org/leo-unglaub/contao-inherit-insert-tags/issues",
+		"wiki": "https://www.leo-unglaub.net/software/contao-extensions",
+		"irc": "irc://irc.freenode.org/contao.dev",
+		"source": "https://bitbucket.org/leo-unglaub/contao-inherit-insert-tags/src/"
+	},
+	"require":{
+		"php":">=5.5",
+		"contao/core":"~2",
+		"contao-community-alliance/composer-installer": "*"
+	},
+	"replace": {
+		"contao-legacy/inherit_intert_tags": "*"
+	},
+	"extra":{
+		"contao": {
+			"sources":{
+				"run.php": "run.php"
+			}
+		}
+	}
+}
+
